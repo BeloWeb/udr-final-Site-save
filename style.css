@@ -367,6 +367,7 @@ h3{
     color: #fff;
     text-transform: uppercase;
     justify-content: space-between;
+     width: 100vw;
 }
 
 @media screen and (max-width: 500px) { .temoignages h3{ 
