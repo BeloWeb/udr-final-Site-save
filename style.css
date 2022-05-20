@@ -158,12 +158,6 @@ header .cn{
     color: #E71F22;
 }
 
-@media screen and (max-width:500px) { #container button .cn{ 
-    align-items: center;
-    padding-bottom: 20px;
-    
-} }
-
 .article1{
     font-size: 30px;
     padding-top: 100px;
