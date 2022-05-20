@@ -139,11 +139,6 @@ header .cn{
     transition: .4s ease;
 }
 
-@media screen and (max-width:500px) { .headrespon .text{ 
-    align-items: center;
-    padding-top: 100px;
-} }
-
 .cn a{
     text-decoration: none;
     color: #fff;
