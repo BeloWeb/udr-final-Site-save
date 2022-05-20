@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <title>udr-blog</title>
+</head>
+<body>
+    <!--Menu-->
+    <nav> <div class="menu-icon"> <span class="fas fa-bars"></span> </div> 
+       <div class="logo"> <a href="./index.html">UDR</a></div>
+        <div class="nav-items"> 
+            <li><a href="./index.html">Accueil</a></li> 
+            <li><a href="./apropos.html">A propos</a></li> 
+            <li><a href="./blog.html">Blog</a></li> 
+            <li><a href="contact.html">Contact</a></li> 
+            <li><a href="./cours.html">Cours</a></li> 
+            <li><a href="./video.html">Video</a></li> 
+            <li><a href="./gallerie.html">Gallerie</a></li> 
+        </div> 
+        <!--Fin Menu-->
+
+        <!--Espace de Recherche-->
+        <div class="search-icon"> 
+            <span class="fas fa-search"></span> </div> 
+            <div class="cancel-icon"> 
+                <span class="fas fa-times"></span> </div> 
+                <form action="#"> 
+                    <input type="search" class="search-data" placeholder="Rechercher un article" required> 
+                    <button type="submit" class="fas fa-search"></button></form> </nav>
+                    <!--Fin Espace de recherche-->
+                    <br> <br> 
+
+                    <div class="article1">
+                      <a href="./video.html"><h3>Nos Videos</h3></a>
+                   </div>
+
+                     <!--Section Video Youtube-->
+                     <section class="video-inaugu">
+                      <iframe width="100%" height="762" src="https://youtube.com/embed/HOcPx5N7F-4" 
+                      frameborder="0" allow="autoplay=1; encrypted-media" allowfullscreen>  
+                     </iframe>
+                    </section>
+
+                    <br> <br> <br>  <br> 
+
+                    
+                     <!--Footer-->
+
+                     <footer>
+                        <div class="main-content"> <div class="left box"> <h2>A propos de nous</h2>
+                           <div class="content"> <p>L’UDR a pour objectif de comprendre le monde dans lequel nous vivons et dire qu’un nouveau monde va naitre avec l’effondrement d’une cosmologie antique, axée sur l’esclavage. 
+                             Instaurer ce qu’on appelle une science moderne, le cosmos auquel on fait appel est celui de cesser de fixer regards sur Dieu, mais sur la connaissance que l’homme a sur Dieu.
+                           </p> 
+                           
+                           <div class="social"> 
+                                   <a href="https://facebook.com/udr"><span class="fab fa-facebook-f"></span>
+                                  </a> <a href="#"><span class="fab fa-twitter"></span>
+                                  </a> <a href="https://instagram.com/udr">
+                                      <span class="fab fa-instagram"></span>
+                                  </a> <a href="https://youtube.com/c/udr">
+                                      <span class="fab fa-youtube"></span>
+                                  </a> </div> 
+                                </div> 
+                              </div> 
+                              <div class="center box"> 
+                                      <h2>Adresse</h2> <div class="content"> 
+                                          <div class="place"> <span class="fas fa-map-marker-alt"></span> 
+                                              <span class="text">6, Rue de Neuchâtel 67000, Strasbourg, France <br> <br>
+                                                5, Impasse St Marc, Rte de Frères, Pétion-Ville, Haïti, WI. 
+                                                </span> 
+                                              </div> 
+                                              <div class="phone"> <span class="fas fa-phone-alt"></span> 
+                                                  <span class="text">+33 782 07 01 52</span> 
+                                                </div> <div class="email"> 
+                                                      <span class="fas fa-envelope"></span> 
+                                                      <span class="text">contact@udr.com</span> 
+                                                    </div> </div> </div>
+                                                       <div class="right box"> <h2>Contactez-nous</h2> <div class="content"> 
+                                                           <form action="#"> <div class="email"> <div class="text">Votre Email *</div> 
+                                                              <input type="email" required> 
+                                                            </div> <div class="msg"> 
+                                                                  <div class="text">Votre Message *</div> <textarea rows="2" cols="25" required></textarea> 
+                                                              </div> 
+                                                              <div class="btn"> <button type="submit">Envoyer</button> 
+                                                              </div> </form> 
+                                                            </div></div> </div> 
+                                                          <div class="bottom"> <center> 
+                                                              <span class="credit">Created By <a href="mailto:woobeegraphic@gmail.com">WOOBEE Graphic</a> |
+                                                              </span> <span class="far fa-copyright"></span><span> <span class="udrfooter"><a href="#accueil.html">UDR 2022 - Tous droits réservés. </a> </span>      
+                                                              </span> </center> </div> </footer>
+               <!--Fin Footer-->
+
+               <!--code JS-->
+                 
+               <script> const menuBtn = document.querySelector(".menu-icon span"); 
+                  const searchBtn = document.querySelector(".search-icon"); 
+                  const cancelBtn = document.querySelector(".cancel-icon"); 
+                  const items = document.querySelector(".nav-items"); 
+                  const form = document.querySelector("form"); 
+                  menuBtn.onclick = ()=>{ items.classList.add("active"); menuBtn.classList.add("hide"); 
+                  searchBtn.classList.add("hide"); cancelBtn.classList.add("show"); } 
+                  cancelBtn.onclick = ()=>{ items.classList.remove("active"); 
+                  menuBtn.classList.remove("hide"); searchBtn.classList.remove("hide"); 
+                  cancelBtn.classList.remove("show"); form.classList.remove("active"); 
+                  cancelBtn.style.color = "#ff3d00"; } 
+                  searchBtn.onclick = ()=>{ form.classList.add("active"); 
+                  searchBtn.classList.add("hide"); cancelBtn.classList.add("show"); } </script>
+
+               <!-- Fin code JS-->
+</body>
+</html>
